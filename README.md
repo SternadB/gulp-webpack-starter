@@ -4,21 +4,40 @@
   	<p align="center">Gulp-webpack starter project</p>
 </p>
 
-[![NPM version][npm-image]][npm-url] [![Node version][node-image]][node-url][![Downloads][downloads-image]][npm-url] [![Azure Pipelines Build Status][azure-pipelines-image]][azure-pipelines-url] [![Build Status][travis-image]][travis-url] [![AppVeyor Build Status][appveyor-image]][appveyor-url] [![Coveralls Status][coveralls-image]][coveralls-url] [![OpenCollective Backers][backer-badge]][backer-url] [![OpenCollective Sponsors][sponsor-badge]][sponsor-url] [![Gitter chat][gitter-image]][gitter-url]
+## Gulp-webpack starter project
 
+Gulp-webpack starter project combine gulp and webpack technology for compiling js and scss files. It's serves as initial framework for projects build with ES6 and SASS. It's also contains demo ES6 project.
 
-## What is gulp-webpack starter project?
+- **Gulp** - gulp is a toolkit that helps you automate painful or time-consuming tasks in your development workflow.
+- **Webpack** - webpack is a static module bundler for modern JavaScript applications. When webpack processes your application, it internally builds a dependency graph which maps every module your project needs and generates one or more bundles.
 
-- **Automation** - gulp is a toolkit that helps you automate painful or time-consuming tasks in your development workflow.
-- **Platform-agnostic** - Integrations are built into all major IDEs and people are using gulp with PHP, .NET, Node.js, Java, and other platforms.
-- **Strong Ecosystem** - Use npm modules to do anything you want + over 3000 curated plugins for streaming file transformations
-- **Simple** - By providing only a minimal API surface, gulp is easy to learn and simple to use
+## Content
+- **Gulpfile.js** - define compile settings, gulp plugins and tasks
+- **Webpack.config.js** - define configuration for webpack (compiling js files)
+- **ES6 cars project** - demo project build in ES6
+- **Style structure** - demonstrate style structure with .scss
 
-## Installation
-- **NPM modules** - npm install
-- **Gulp build task** - gulp build
-- **Gulp script task** - gulp gulp:sctipt
-- **Gulp sass task** - gulp gulp:sass
+## Requirements
+- **NPM version** - 6.14.4
+- **NODE version** - 12.16.1
+
+## Installation and usage
+- **NPM modules** - npm install (install all required plugins)
+- **Gulp build task** - gulp build (run all gulp tasks)
+- **Gulp script task** - gulp gulp:script (run script task)
+- **Gulp sass task** - gulp gulp:sass (run sass task)
+
+## Gulp plugins
+- gulp-babel (JS compiler)
+- gulp-plumber (prevent pipe breaking coused by errors from gulp plugins)
+- gulp-concat (concatenate js files)
+- gulp-sass (SASS compiler)
+- gulp-notify (messages)
+- sourcemaps (maps CSS back to SASS files)
+- sassGlob (allow to use glob inports in scss files)
+- gulp-browser-sync (create external link for browsing)
+- webpack-stream (adding webpack tehnology)
+- webpackconfig (webpack file with configuration)
 
 
 
