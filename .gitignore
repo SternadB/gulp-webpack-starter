@@ -1,0 +1,4 @@
+#Gitignore file 
+
+#node_modules a npm directory
+node_modules/

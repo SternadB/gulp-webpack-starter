@@ -1,0 +1,26 @@
+nav[role="navigation"] {
+  padding: 20px;
+  margin-bottom: 50px;
+  background: aliceblue;
+
+  ul {
+    list-style: none;
+
+    li {
+      display: inline-block;
+      padding: 10px 15px;
+      margin-right: 10px;
+      background: azure;
+      border: solid 1px transparent;
+
+      &:hover {
+        border: solid 1px white;
+      }
+
+      a {
+        text-decoration: none;
+        color: black;
+      }
+    }
+  }
+}

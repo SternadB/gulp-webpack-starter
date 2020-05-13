@@ -1,0 +1,25 @@
+#modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  border-radius: 4px;
+  background: white;
+  border: solid 2px #e5e5e5;
+  width: 400px;
+  height: auto;
+  padding: 40px;
+  -webkit-box-shadow: 10px 10px 15px -2px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 15px -2px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 15px -2px rgba(0,0,0,0.75);
+
+  .close {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
+    padding: 5px 8px;
+    border: solid 1px #e7a7a2;
+  }
+}

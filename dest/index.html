@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Car store</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="module" src="js/main.js"></script>
+</head>
+<body class="carstore">
+    <h1> Car store in ES6</h1>
+    <fieldset style="margin-bottom: 55px">
+        <legend>Cars store</legend>
+        <h2>No entry</h2>
+    </fieldset>
+
+    <fieldset>
+        <legend>Add car</legend>
+        <form id="addCar">
+            <p id="warnings"></p>
+            <div class="form-field">
+                <label for="mark">Mark</label>
+                <select name="mark" id="mark">
+                    <option value="null">Select mark</option>
+                </select>
+            </div>
+
+            <div class="form-field">
+                <label for="model">Model</label>
+                <select name="model" id="model">
+                    <option value="null">Select model</option>
+                </select>
+            </div>
+
+            <div class="form-field">
+                <input type="radio" id="old" name="typ" value="oldtimer" checked>
+                <label for="old">Oldtimer</label>
+                <input type="radio" id="normal" name="typ" value="normal">
+                <label for="normal">Normal</label>
+            </div>
+
+            <div class="form-field">
+                <input type="checkbox" name="turbo" id="turbo">
+                <label for="turbo">Turbo</label>
+                <input type="checkbox" name="abs" id="abs">
+                <label for="abs">ABS</label>
+                <input type="checkbox" name="esp" id="esp">
+                <label for="esp">ESP</label>
+            </div>
+
+            <div class="form-field">
+                <button type="submit">Submit</button>
+            </div>
+
+        </form>
+    </fieldset>
+    <div id="modal" style="display: none">
+        <p class="text">Do you really like to delete car -name of car-?</p>
+        <span class="close">X</span>
+        <button class="confirm">Confirm</button>
+        <button class="cancel">Concel</button>
+    </div>
+</body>
+</html>

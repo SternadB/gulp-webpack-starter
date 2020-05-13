@@ -1,0 +1,28 @@
+$black: '000000';
+$white: white;
+$blue: blue;
+/*rg*/
+
+@mixin borders(){
+	border: solid 1px black;
+}
+
+/**
+ * [padding-horizontal]
+ * @param  {[type]} $padding [description]
+ * @return {[type]}          [description]
+ */
+@mixin padding-horizontal($padding) {
+	padding-left: $padding;
+	padding-right: $padding;
+}
+
+/**
+ * [padding-vertical]
+ * @param  {[type]} $padding [description]
+ * @return {[type]}          [description]
+ */
+@mixin padding-vertical($padding) {
+	padding-top: $padding;
+	padding-bottom: $padding;
+}
