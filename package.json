@@ -1,7 +1,7 @@
 {
   "name": "gulp-webpack-starter",
   "version": "1.0.0",
-  "description": "Starter project for compiling  and sass files",
+  "description": "Starter project for compiling js and sass files",
   "main": "dest/index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,6 +15,7 @@
     "compiling"
   ],
   "author": "Blaž Sternad",
+  "repository": "sternadb/gulp-webpack-starter",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.9.6",
