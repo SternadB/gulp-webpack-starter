@@ -34,7 +34,7 @@ Gulp-webpack starter project combine gulp and webpack technology for compiling j
 - gulp-sass (SASS compiler)
 - gulp-notify (messages)
 - sourcemaps (maps CSS back to SASS files)
-- sassGlob (allow to use glob inports in scss files)
+- sassGlob (allow to use glob imports in scss files)
 - gulp-browser-sync (create external link for browsing)
 - webpack-stream (adding webpack tehnology)
 - webpackconfig (webpack file with configuration)

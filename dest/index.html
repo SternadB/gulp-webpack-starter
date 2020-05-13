@@ -1,63 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Car store</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script type="module" src="js/main.js"></script>
+	<title>Gulp-Webpack starter</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body class="carstore">
-    <h1> Car store in ES6</h1>
-    <fieldset style="margin-bottom: 55px">
-        <legend>Cars store</legend>
-        <h2>No entry</h2>
-    </fieldset>
+<body>
+	<nav role="navigation">
+		<ul>
+			<li><a href="index.html" title="">Home</a></li>
+			<li><a href="carstore.html" title="">Demo project</a></li>
+		</ul>
+	</nav>
+	<h1>Gulp-Webpack starter</h1>
+	<h2>Thank you for using gulp-webpack starter!</h2>
 
-    <fieldset>
-        <legend>Add car</legend>
-        <form id="addCar">
-            <p id="warnings"></p>
-            <div class="form-field">
-                <label for="mark">Mark</label>
-                <select name="mark" id="mark">
-                    <option value="null">Select mark</option>
-                </select>
-            </div>
+	<p>
+		Gulp-webpack starter project combine gulp and webpack technology for compiling js and scss files. It's serves as initial framework for projects build with ES6 and SASS. It's also contains demo ES6 project.
 
-            <div class="form-field">
-                <label for="model">Model</label>
-                <select name="model" id="model">
-                    <option value="null">Select model</option>
-                </select>
-            </div>
+		<ul>
+			<li>Gulp - gulp is a toolkit that helps you automate painful or time-consuming tasks in your development workflow.</li>
+			<li>Webpack - webpack is a static module bundler for modern JavaScript applications. When webpack processes your application, it internally builds a dependency graph which maps every module your project needs and generates one or more bundles.</li>
+		</ul>
+	</p>
 
-            <div class="form-field">
-                <input type="radio" id="old" name="typ" value="oldtimer" checked>
-                <label for="old">Oldtimer</label>
-                <input type="radio" id="normal" name="typ" value="normal">
-                <label for="normal">Normal</label>
-            </div>
+	<p>
+		<h3>Content</h3>
+		<ul>
+			<li>Gulpfile.js - define compile settings, gulp plugins and tasks</li>
+			<li>Webpack.config.js - define configuration for webpack (compiling js files)</li>
+			<li>ES6 cars project - demo project build in ES6</li>
+			<li>Style structure - demonstrate style structure with .scss</li>
+		</ul>
+	</p>
 
-            <div class="form-field">
-                <input type="checkbox" name="turbo" id="turbo">
-                <label for="turbo">Turbo</label>
-                <input type="checkbox" name="abs" id="abs">
-                <label for="abs">ABS</label>
-                <input type="checkbox" name="esp" id="esp">
-                <label for="esp">ESP</label>
-            </div>
+	<p>
+		<h3>Requirements</h3>
+		<ul>
+			<li>NPM version - 6.14.4</li>
+			<li>NODE version - 12.16.1</li>
+		</ul>
+	</p>
 
-            <div class="form-field">
-                <button type="submit">Submit</button>
-            </div>
+	<p>
+		<h3>Installation and usage</h3>
+		<ul>
+			<li>NPM modules - npm install (install all required plugins)</li>
+			<li>Gulp build task - gulp build (run all gulp tasks)</li>
+			<li>Gulp script task - gulp gulp:script (run script task)</li>
+			<li>Gulp sass task - gulp gulp:sass (run sass task)</li>
+		</ul>
+	</p>
 
-        </form>
-    </fieldset>
-    <div id="modal" style="display: none">
-        <p class="text">Do you really like to delete car -name of car-?</p>
-        <span class="close">X</span>
-        <button class="confirm">Confirm</button>
-        <button class="cancel">Concel</button>
-    </div>
+	<p>
+		<h3>Gulp plugins</h3>
+		<ul>
+			<li>gulp-babel (JS compiler)</li>
+			<li>gulp-plumber (prevent pipe breaking coused by errors from gulp plugins)</li>
+			<li>gulp-concat (concatenate js files)</li>
+			<li>gulp-sass (SASS compiler)</li>
+			<li>gulp-notify (messages)</li>
+			<li>sourcemaps (maps CSS back to SASS files)</li>
+			<li>sassGlob (allow to use glob inports in scss files)</li>
+			<li>gulp-browser-sync (create external link for browsing)</li>
+			<li>webpack-stream (adding webpack tehnology)</li>
+		</ul>
+	</p>
 </body>
 </html>
+<script type="module" src="js/main.js"></script>

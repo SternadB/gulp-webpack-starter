@@ -1,8 +1,4 @@
-@import "build/variables";
-@import "nav/navigation";
-@import "forms/form";
-@import "car/car";
-@import "car/modal";
+@import '**/*.scss' 
 
 body {
 	@include padding-horizontal(40px);
