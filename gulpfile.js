@@ -26,6 +26,7 @@ const notify		= require('gulp-notify');
 const sourcemaps	= require('gulp-sourcemaps');
 const sassGlob		= require('gulp-sass-glob');
 const imageMin		= require('gulp-imagemin');
+const cleanCSS		= require('gulp-clean-css');
 const browserSync	= require('browser-sync').create();
 
 //Webpack config
@@ -60,6 +61,14 @@ gulp.task('sass', function(){
 			errLogToConsole: false,
 			onError: function(error_message) {
 				return notify().write(error_message);
+			}
+		}))
+		.pipe(cleanCSS({
+			compatibility: 'ie9',
+			level: {
+				1: {
+					specialComments: 'all',
+				}
 			}
 		}))
 		.pipe(sourcemaps.write())

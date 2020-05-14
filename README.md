@@ -36,6 +36,7 @@ Gulp-webpack starter project combine gulp and webpack technology for compiling j
 - sourcemaps (maps CSS back to SASS files)
 - sassGlob (allow to use glob imports in scss files)
 - imageMin (minify image format - png, jpeg, gif and svn)
+- cleanCSS (css optimizer)
 - gulp-browser-sync (create external link for browsing)
 - webpack-stream (adding webpack tehnology)
 - webpackconfig (webpack file with configuration)
