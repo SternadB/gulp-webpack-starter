@@ -21,7 +21,7 @@
     "imagemin"
   ],
   "author": "Blaž Sternad",
-  "repository": "sternadb/gulp-webpack-starter",
+  "repository": "SternadB/gulp-webpack-starter",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.9.6",
