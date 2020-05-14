@@ -34,10 +34,6 @@ Gulp-webpack starter provides a various features which are:
 - **NODE version** - 12.16.1
 
 ## Installation and usage
-###`npm init`
-npm init command is a recommended way of downloading the Gulp-webpack starter, please fallow next steps (copy code into command prompt or terminal):
-1. `cd your-project-directory`
-2. `npm init gulp-webpack-starter`
 
 ###`git clone`
 The other way to to get starter project is by cloning Git repository, please fallow next steps in command prompt or terminal:

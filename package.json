@@ -21,8 +21,11 @@
     "imagemin"
   ],
   "author": "Blaž Sternad",
-  "repository": "SternadB/gulp-webpack-starter",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url" : "https://github.com/sternadb/gulp-webpack-starter",
+  }
+  "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.9.6",
     "@babel/preset-env": "^7.9.6",
