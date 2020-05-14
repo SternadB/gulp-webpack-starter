@@ -2,7 +2,7 @@
 * GULPFILE.JS
 * - setting up a modern web development environment 
 */
-var gulp 			= require('gulp');
+var gulp = require('gulp');
 
 /**
 *Import gulp plugins
@@ -40,7 +40,7 @@ sass.compiler = require('node-sass');
 
 //Task script
 gulp.task('script', function(done){
-	return gulp.src('./src/components/main.js')
+	return gulp.src(['./src/components/main.js'], {since: gulp.lastRun('script')})
 		.pipe(plumber({
 			errorHandler: notify.onError("Error: <%= error.message %>")
 		}))
@@ -52,7 +52,7 @@ gulp.task('script', function(done){
 
 //Task style
 gulp.task('sass', function(){
-	return gulp.src('./sass/**/*.scss')
+	return gulp.src(['./sass/**/*.scss'], {since: gulp.lastRun('sass')})
 		.pipe(plumber({
 			errorHandler: notify.onError("Error: <%= error.message %>")
 		}))
@@ -83,7 +83,7 @@ gulp.task('sass', function(){
 
 //Task image
 gulp.task('image', function(){
-	return gulp.src('./images/**/*.+(png|jpg|jpeg|gif|svg|ico)')
+	return gulp.src(['./images/**/*.+(png|jpg|jpeg|gif|svg|ico)'], {since: gulp.lastRun('image')})
 		.pipe(plumber())
 		.pipe(imageMin({
 			progressive: true,

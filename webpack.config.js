@@ -1,8 +1,25 @@
 //Default webpack.config.js
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+
 module.exports = {
   mode: 'development',
+  entry: {
+    "main": "./src/components/main.js",
+    "main.min": "./src/components/main.js",
+  },
   output: {
-    filename: 'main.js',
+    filename: '[name].js',
+  },
+  optimization: {
+    minimize: true,
+    minimizer: [new UglifyJsPlugin({
+      include: /\.min\.js$/,
+      uglifyOptions: {
+        output: {
+          comments: false
+        }
+      }
+    })],
   },
   module: {
     rules: [
