@@ -6,10 +6,22 @@
 
 ## Gulp-webpack starter project
 
-Gulp-webpack starter project combine gulp and webpack technology for compiling js and scss files. It's serves as initial framework for projects build with ES6 and SASS. It's also contains demo ES6 project.
+Gulp-webpack starter project combine gulp and webpack technology for compiling java script and style files. It's serves as initial framework for projects build with ES6 and SASS. It's also contains demo ES6 project.
 
 - **Gulp** - gulp is a toolkit that helps you automate painful or time-consuming tasks in your development workflow.
 - **Webpack** - webpack is a static module bundler for modern JavaScript applications. When webpack processes your application, it internally builds a dependency graph which maps every module your project needs and generates one or more bundles.
+
+Gulp-webpack starter provides a various features which are:
+ - compile CSS preprocessor code (SASS) to CSS
+ - autoprefix, clean and minify CSS file
+ - include style source maps
+ - show message after gulp task is completed
+ - concatenate style and js files
+ - allow to use glob imports in style files
+ - set up a local dev server through browsersync which is available on: `http://localhost:3000`
+ - minify and compress images (.png, .jpg, .jpeg, .svg, .ico)
+ - compile ES6 to ES5 code and minify js file
+
 
 ## Content
 - **Gulpfile.js** - define compile settings, gulp plugins and tasks
@@ -22,6 +34,17 @@ Gulp-webpack starter project combine gulp and webpack technology for compiling j
 - **NODE version** - 12.16.1
 
 ## Installation and usage
+###`npm inti`
+npm init command is a recommended way of downloading the Gulp-webpack starter, please fallow next steps (copy code into command prompt or terminal):
+1. `cd your-project-directory`
+2. `npm init gulp-webpack-starter`
+
+###`git clone`
+The other way to to get starter project is by cloning Git repository, please fallow next steps in command prompt or terminal:
+1. `cd your-project-directory`
+2. `git clone https://github.com/SternadB/gulp-webpack-starter.git`
+3. `npm install`
+
 - **NPM modules** - npm install (install all require plugins)
 - **Gulp build task** - gulp build (run all gulp tasks)
 - **Gulp script task** - gulp gulp:script (run script task)
