@@ -15,6 +15,7 @@ var gulp = require('gulp');
 * - sassGlob (allow to use glob imports in scss files)
 * - imageMin (minify image format - png, jpeg, gif and svn)
 * - cleanCSS (css optimizer)
+* - gulp-autoprefixer (add vendor prefixes to CSS rules)
 * - gulp-browser-sync (create external link for browsing)
 * - webpack-stream (adding webpack tehnology)
 * - webpackconfig (webpack file with configuration)

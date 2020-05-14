@@ -22,10 +22,11 @@ Gulp-webpack starter project combine gulp and webpack technology for compiling j
 - **NODE version** - 12.16.1
 
 ## Installation and usage
-- **NPM modules** - npm install (install all required plugins)
+- **NPM modules** - npm install (install all require plugins)
 - **Gulp build task** - gulp build (run all gulp tasks)
 - **Gulp script task** - gulp gulp:script (run script task)
 - **Gulp sass task** - gulp gulp:sass (run sass task)
+- **Gulp image task** - gulp gulp:image (run image task)
 
 ## Gulp plugins
 - gulp-babel (JS compiler)
@@ -37,9 +38,13 @@ Gulp-webpack starter project combine gulp and webpack technology for compiling j
 - sassGlob (allow to use glob imports in scss files)
 - imageMin (minify image format - png, jpeg, gif and svn)
 - cleanCSS (css optimizer)
+- gulp-autoprefixer (add vendor prefixes to CSS rules)
 - gulp-browser-sync (create external link for browsing)
 - webpack-stream (adding webpack tehnology)
 - webpackconfig (webpack file with configuration)
+
+## Webpack plugins
+- uglifyjs-webpack-plugin (minify js files)
 
 
 
