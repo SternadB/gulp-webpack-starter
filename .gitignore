@@ -2,3 +2,5 @@
 
 #node_modules a npm directory
 node_modules/
+#folder where minify images are stored
+dest/images/*
