@@ -1,7 +1,7 @@
 {
   "name": "gulp-webpack-starter",
   "version": "1.0.0",
-  "description": "Starter project for compiling js and sass files",
+  "description": "Gulp - webpack starter is a starter kit which provides a simple way of setting up a modern web development environment which require some of the most popular gulp plugins for compiling SCSS and JS files",
   "main": "dest/index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,7 +12,13 @@
     "Gulp",
     "Webpack",
     "starter",
-    "compiling"
+    "compiling",
+    "web",
+    "front-end",
+    "gulp-starter",
+    "babel",
+    "browsersync",
+    "imagemin"
   ],
   "author": "Blaž Sternad",
   "repository": "sternadb/gulp-webpack-starter",
