@@ -1,4 +1,7 @@
-//Default webpack.config.js
+/**
+* WEBPACK.CONFIG.JS
+* - default webpack.config.js
+*/
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
