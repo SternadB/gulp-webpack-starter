@@ -14,6 +14,7 @@ var gulp 			= require('gulp');
 * - sourcemaps (maps CSS back to SASS files)
 * - sassGlob (allow to use glob imports in scss files)
 * - imageMin (minify image format - png, jpeg, gif and svn)
+* - cleanCSS (css optimizer)
 * - gulp-browser-sync (create external link for browsing)
 * - webpack-stream (adding webpack tehnology)
 * - webpackconfig (webpack file with configuration)
@@ -27,6 +28,7 @@ const sourcemaps	= require('gulp-sourcemaps');
 const sassGlob		= require('gulp-sass-glob');
 const imageMin		= require('gulp-imagemin');
 const cleanCSS		= require('gulp-clean-css');
+const autoprefixer	= require('gulp-autoprefixer');
 const browserSync	= require('browser-sync').create();
 
 //Webpack config
@@ -63,6 +65,7 @@ gulp.task('sass', function(){
 				return notify().write(error_message);
 			}
 		}))
+		.pipe(autoprefixer())
 		.pipe(cleanCSS({
 			compatibility: 'ie9',
 			level: {
