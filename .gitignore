@@ -4,5 +4,3 @@
 node_modules/
 #folder where minify images are stored
 dest/images/*
-#package-lock.json
-package-lock.json
