@@ -40,8 +40,6 @@ function reindexinCar() {
     let indexset = 0;
     let cars = document.querySelectorAll('#carlist li .car')
 
-    console.log(cars)
-
     cars.forEach((element) => {
 
         element.setAttribute('index', indexset)
@@ -68,8 +66,6 @@ function deleteEntry(index) {
  * @param carName
  */
 function openModal(li, index) {
-    console.log(li)
-    console.log(index)
     let carName = li.querySelector('.mark').textContent
     let modal = document.getElementById('modal')
     let closeIcon = modal.querySelector('span.close')
@@ -89,12 +85,11 @@ function openModal(li, index) {
     })
 
     confirm.addEventListener('click', (event) => {
-        modal.innerHTML = ''
-        console.log(`Delete ${index}`)
         let deleteAction = deleteEntry(index)
         if(deleteAction) {
             li.remove()
             reindexinCar()
+            modal.style.display = 'none'
         }
-    })
+    }, {once: true})
 }

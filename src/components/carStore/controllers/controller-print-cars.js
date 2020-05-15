@@ -76,5 +76,4 @@ function updateTitle(carlength) {
     let lengthText = carlength ==1 ? "List of one car" : "List of "+carlength+" cars"
 
     title.textContent = lengthText
-
 }
