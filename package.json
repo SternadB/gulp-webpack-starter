@@ -49,4 +49,7 @@
     "i": "^0.3.6",
     "webpack-stream": "^5.2.1"
   }
+    "engines": {
+    "node": ">=8"
+  }
 }
